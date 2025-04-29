@@ -32,7 +32,7 @@ public class DocController {
 	}
 	
 	@PostMapping("/documentaries")
-	public ResponseEntity<Documentary> saveMovie(
+	public ResponseEntity<Documentary> saveDocumentary(
 			@RequestBody Documentary documentary){
 		Documentary savedDocumentary = repository.save(documentary);
 		return ResponseEntity.ok(savedDocumentary);
